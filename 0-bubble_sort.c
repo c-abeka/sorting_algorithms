@@ -24,6 +24,7 @@ void bubble_sort(int *array, size_t size)
 			array[i] = array[i + 1];
 			array[i + 1] = temp;
 			swaps = 1;
+			print_array(array, size);
 		}
 
 		if (i == len - 1 && swaps == 1)
